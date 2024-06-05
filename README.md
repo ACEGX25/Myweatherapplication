@@ -33,8 +33,8 @@ Welcome to my Personal Weather Application! This Java web application provides r
 ### Steps
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/ashutoshh-17/WeatherApp.git
-   cd WeatherApp
+   git clone https://github.com/ACEGX25/Myweatherapplication.git
+   cd Myweatherapplication
    ```
 
 2. **Configure the OpenWeather API:**
