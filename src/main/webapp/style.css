@@ -12,7 +12,7 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: center;
- background: linear-gradient(to right, #56ccf2, #2f80ed);
+background-image: linear-gradient(to right top, #ffb100, #ffad00, #ffa900, #ffa500, #ffa100, #ff9900, #ff9200, #ff8a00, #ff7d00, #ff6e00, #ff5f00, #ff4d00);
 }
 
 .mainContainer {
