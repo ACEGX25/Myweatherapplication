@@ -69,7 +69,7 @@ WeatherApp/
 ```
 
 ## Usage
-1. Open your web browser and navigate to `http://localhost:8080/WeatherApp/`.
+1. Open your web browser and navigate to `http://localhost:8080/Myweatherapplication/`.
 2. Enter the city name to get the current weather information.
 3. View the weather details displayed dynamically on the webpage.
 
