@@ -1,55 +1,80 @@
-# Personal Weather App
+# Personal Weather Application
 
-This project implements a personal weather application built with Java web technologies. It retrieves weather data for a user-specified location using the Open Weather Map API and displays it in a user-friendly interface.
-
-## Technologies Used
-
-### Backend
-- Java (Java 11+)
-- Java Servlets
-- JavaServer Pages (JSP)
-- Jakarta EE (javax.servlet package)
-- Java I/O (for handling HTTP communication)
-- GSON library (for parsing JSON data)
-
-### Frontend
-- HTML
-- CSS
-
-### Deployment
-- Apache Tomcat Server
-
-## Project Structure
-weather-app/
-├── src/main/java/
-│ ├── com/example/weather/
-│ │ ├── WeatherServlet.java
-│ │ └── WeatherData.java
-├── src/main/webapp/
-│ ├── index.jsp
-│ ├── index.html
-│ └── css/
-│ └── style.css
-├── pom.xml
-└── WEB-INF/
-└── web.xml
+## Overview
+Welcome to my Personal Weather Application! This Java web application provides real-time weather updates by integrating various technologies such as JSP, Servlets, the OpenWeather API, Apache Tomcat server, Java I/O, Jakarta EE, JSON, and Gson. Additionally, it features a user-friendly interface designed with HTML and CSS.
 
 ## Features
+- **Real-time Weather Data:** Fetches current weather information from the OpenWeather API.
+- **User Interface:** Interactive and responsive UI created with HTML and CSS.
+- **Dynamic Content:** Utilizes JSP for generating dynamic web content.
+- **Servlets:** Manages server-side processing and communication between the client and the server.
+- **JSON Parsing:** Uses Gson for parsing JSON data from the OpenWeather API.
+- **Java I/O:** Handles input and output operations.
+- **Deployment:** Runs on an Apache Tomcat server.
 
-- User enters a location name (city or zip code) in the web interface.
-- `WeatherServlet` handles the user request, retrieves weather data from the Open Weather Map API using the user-provided location.
-- GSON library parses the received JSON data into a Java object (`WeatherData`).
-- Application logic in the servlet processes the weather data and prepares it for display.
-- Weather information (temperature, humidity, description, etc.) is displayed on the `index.jsp` page using JSP expressions and tags.
-- HTML and CSS provide a user-friendly interface for displaying the weather data.
+## Technologies Used
+- **Java:** Core programming language.
+- **JSP (JavaServer Pages):** For generating dynamic web pages.
+- **Servlets:** For handling HTTP requests and responses.
+- **OpenWeather API:** For fetching weather data.
+- **Apache Tomcat:** Server for deploying the web application.
+- **Java I/O:** For input and output operations.
+- **Jakarta EE:** Framework for building enterprise-level applications.
+- **JSON & Gson:** For handling JSON data.
+- **HTML & CSS:** For front-end design and styling.
 
-## Getting Started
-
+## Setup Instructions
 ### Prerequisites
+- Java Development Kit (JDK)
+- Apache Tomcat server
+- IDE (such as IntelliJ IDEA or Eclipse)
+- Internet connection for accessing the OpenWeather API
 
-- Java Development Kit (JDK 11+)
-- Apache Tomcat Server
-- [Open Weather Map API Key](https://openweathermap.org/api)
+### Steps
+1. **Clone the Repository:**
+   ```sh
+   git clone https://github.com/ashutoshh-17/WeatherApp.git
+   cd WeatherApp
+   ```
+
+2. **Configure the OpenWeather API:**
+   - Sign up at [OpenWeather](https://openweathermap.org/) to get your API key.
+   - Open the `MyServlet.java` file.
+   - Replace `YOUR_API_KEY` with your actual OpenWeather API key.
+
+3. **Deploy to Apache Tomcat:**
+   - Ensure Apache Tomcat is installed and running.
+   - Copy the project folder to the Tomcat `webapps` directory.
+   - Start the Tomcat server and navigate to `http://localhost:8080/WeatherApp` in your web browser.
+
+## Project Structure
+```
+WeatherApp/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── myPackage/
+│   │   │           ├── MyServlet.java
+│   │   ├── webapp/
+│   │   │   ├── images/
+│   │   │   │   └── weather-logo.png
+│   │   │   ├── WEB-INF/
+│   │   │   │   └── web.xml
+│   │   │   ├── index.jsp
+│   │   │   └── css/
+│   │   │       └── style.css
+├── README.md
+└── ...
+
+```
+
+## Usage
+1. Open your web browser and navigate to `http://localhost:8080/WeatherApp/`.
+2. Enter the city name to get the current weather information.
+3. View the weather details displayed dynamically on the webpage.
+
+## Screenshots
+Here are some screenshots of the application in action:
 
 ### Configuration
 
@@ -77,10 +102,19 @@ Open a web browser and navigate to `http://localhost:<port>/index.jsp` (replace 
 
 
 ![Screenshot 2024-06-05 084318](https://github.com/ACEGX25/Myweatherapplication/assets/143728245/ccfd239f-eaeb-457e-a8ce-af60d9be0d08)
-![Screenshot 2024-06-05 084338](https://github.com/ACEGX25/Myweatherapplication/assets/143728245/6102ef80-d6d1-45be-a833-12dcc9a9c37a)
-![Screenshot 2024-06-05 084349](https://github.com/ACEGX25/Myweatherapplication/assets/143728245/d1de2b9f-7f23-4b6a-9383-4f8fa41bbac3)
-![Screenshot 2024-06-05 084400](https://github.com/ACEGX25/Myweatherapplication/assets/143728245/ff9e6dd8-a546-4a09-9498-c3bf41045cc7)
-![Screenshot 2024-06-05 084418](https://github.com/ACEGX25/Myweatherapplication/assets/143728245/7cf95d82-806b-4a56-a264-e0bf8f8c3d9a)
-![Screenshot 2024-06-05 084432](https://github.com/ACEGX25/Myweatherapplication/assets/143728245/28735c78-c5d9-46a5-b77a-e0d6dcfafdf5)
 ![Screenshot 2024-06-05 084450](https://github.com/ACEGX25/Myweatherapplication/assets/143728245/37ccfef8-95bb-4c2e-83f2-e5179743b7e2)
+
+## Contributing
+Contributions are welcome! If you have any ideas or improvements, feel free to submit a pull request or open an issue.
+
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## Contact
+For any inquiries or feedback, please reach out to me.
+
+---
+
+Thank you for checking out my Weather Application! Feel free to explore the code, provide feedback, and contribute to the project. Happy coding!
+
 
